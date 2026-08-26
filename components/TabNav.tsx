@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 const TABS = ["About me", "Office Work", "Resume", "Work"] as const;
 export type Tab = (typeof TABS)[number];
 
@@ -27,7 +29,15 @@ export default function TabNav({
             >
               {tab}
               {active === tab && (
-                <span className="absolute left-3 right-3 sm:left-4 sm:right-4 -bottom-[1px] h-[2px] bg-ink" />
+                <motion.span
+                  className="absolute left-3 right-3 sm:left-4 sm:right-4 -bottom-[1px] h-[2px] bg-ink"
+                  layoutId="tab-underline"
+                  transition={{
+                    type: "spring",
+                    stiffness: 380,
+                    damping: 30,
+                  }}
+                />
               )}
             </button>
           ))}
