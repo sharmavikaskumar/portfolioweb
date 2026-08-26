@@ -46,7 +46,7 @@ export default function OfficeWorkSection() {
     <section id="office-work" className="px-5 sm:px-10 py-10">
       {/* Header Card */}
       <MotionWrapper type="fade-up" duration={0.6}>
-        <div className="bg-ink text-paper rounded-2xl p-6 sm:p-8 mb-10">
+        <div className="bg-ink text-paper rounded-2xl p-4 sm:p-8 mb-8 sm:mb-10">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div>
               <div className="flex items-center gap-2 mb-3">
@@ -55,7 +55,7 @@ export default function OfficeWorkSection() {
                 </span>
                 <span className="text-xs text-paper/70">Tarapur, Maharashtra, India</span>
               </div>
-              <h2 className="font-display font-bold text-3xl sm:text-4xl">
+              <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl">
                 Office Work & Corporate Experience
               </h2>
               <p className="text-paper/80 text-sm sm:text-base leading-relaxed max-w-3xl mt-3">
@@ -63,7 +63,7 @@ export default function OfficeWorkSection() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-3 sm:gap-4 shrink-0 min-w-[280px]">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 shrink-0 w-full lg:min-w-[280px] lg:w-auto">
               {QUICK_STATS.map((stat, i) => (
                 <motion.div
                   key={stat.label}
@@ -94,7 +94,7 @@ export default function OfficeWorkSection() {
       <div className="space-y-8">
         {ROLES.map((role, roleIdx) => (
           <MotionWrapper key={role.title} type="fade-up" delay={0.15 * roleIdx} duration={0.6}>
-            <div className="border border-ink/20 rounded-2xl p-6 sm:p-8 bg-paper hover:border-blue transition-colors">
+            <div className="border border-ink/20 rounded-2xl p-4 sm:p-8 bg-paper hover:border-blue transition-colors">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-ink/10">
                 <div>
                   <span className="text-xs font-semibold text-blue uppercase tracking-wider">

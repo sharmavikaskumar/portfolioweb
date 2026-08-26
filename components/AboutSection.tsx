@@ -9,7 +9,7 @@ export default function AboutSection() {
       <div className="grid sm:grid-cols-2 gap-6">
         {/* Photo / intro card */}
         <MotionWrapper type="fade-up" delay={0} duration={0.6}>
-          <div className="relative bg-ink rounded-2xl overflow-hidden min-h-[380px] p-6 flex flex-col justify-between">
+          <div className="relative bg-ink rounded-2xl overflow-hidden min-h-[280px] sm:min-h-[380px] p-5 sm:p-6 flex flex-col justify-between">
             <span className="text-paper/70 text-sm font-medium">Hello,</span>
             <h2 className="font-display font-bold text-paper leading-[0.95] text-4xl sm:text-5xl">
               My name
@@ -54,12 +54,12 @@ export default function AboutSection() {
               <h3 className="font-display font-semibold text-xl mb-3">
                 Get In Touch
               </h3>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-1 xs:grid-cols-3 gap-3">
                 {[
                   {
                     href: "mailto:sharmavikaskumar95@gmail.com",
                     className:
-                      "bg-ink text-paper rounded-xl p-3 flex flex-col justify-between h-24 hover:opacity-90 transition-opacity focus-ring",
+                      "bg-ink text-paper rounded-xl p-3 flex flex-col justify-between h-auto xs:h-24 hover:opacity-90 transition-opacity focus-ring",
                     icon: (
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                         <path
@@ -79,7 +79,7 @@ export default function AboutSection() {
                     target: "_blank",
                     rel: "noreferrer",
                     className:
-                      "bg-blue text-paper rounded-xl p-3 flex flex-col justify-between h-24 hover:opacity-90 transition-opacity focus-ring",
+                      "bg-blue text-paper rounded-xl p-3 flex flex-col justify-between h-auto xs:h-24 hover:opacity-90 transition-opacity focus-ring",
                     icon: (
                       <span className="font-display font-bold text-lg">in</span>
                     ),
@@ -91,7 +91,7 @@ export default function AboutSection() {
                     target: "_blank",
                     rel: "noreferrer",
                     className:
-                      "border border-ink/20 rounded-xl p-3 flex flex-col justify-between h-24 hover:bg-ink hover:text-paper transition-colors focus-ring",
+                      "border border-ink/20 rounded-xl p-3 flex flex-col justify-between h-auto xs:h-24 hover:bg-ink hover:text-paper transition-colors focus-ring",
                     icon: (
                       <svg
                         width="18"

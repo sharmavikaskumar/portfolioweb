@@ -24,7 +24,7 @@ const SOFTSKILLS = ["#Problem_Solving", "#Ownership", "#Curiosity", "#Communicat
 export default function ResumeSection() {
   return (
     <section id="resume" className="px-5 sm:px-10 py-10">
-      <div className="grid sm:grid-cols-3 gap-10">
+      <div className="grid sm:grid-cols-3 gap-6 sm:gap-10">
         {/* Experience */}
         <MotionWrapper type="fade-up" delay={0} duration={0.6}>
           <div>

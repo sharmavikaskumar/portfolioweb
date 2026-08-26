@@ -57,7 +57,7 @@ export default function Hero() {
 
         {/* Blue signature block */}
         <MotionWrapper type="scale-up" delay={0.3} duration={0.7}>
-          <div className="relative bg-blue rounded-2xl overflow-hidden min-h-[420px] flex flex-col justify-between p-6 sm:p-8">
+          <div className="relative bg-blue rounded-2xl overflow-hidden min-h-[300px] sm:min-h-[420px] flex flex-col justify-between p-5 sm:p-8">
             <div
               className="font-display font-bold text-paper leading-[0.85] select-none"
               style={{ fontSize: "clamp(3.2rem, 12vw, 5.5rem)" }}

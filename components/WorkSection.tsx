@@ -27,7 +27,7 @@ export default function WorkSection() {
       <div className="grid sm:grid-cols-2 gap-6">
         {PROJECTS.map((p, i) => (
           <MotionWrapper key={p.name} type="fade-up" delay={0.15 * i} duration={0.6}>
-            <div className="border border-ink/20 rounded-2xl p-6 flex flex-col justify-between min-h-[260px] hover:border-blue transition-colors">
+            <div className="border border-ink/20 rounded-2xl p-5 sm:p-6 flex flex-col justify-between min-h-0 sm:min-h-[260px] hover:border-blue transition-colors">
               <div>
                 <span className="inline-block bg-blue text-paper text-[11px] font-semibold px-2 py-1 rounded-full mb-3">
                   {p.tag}
